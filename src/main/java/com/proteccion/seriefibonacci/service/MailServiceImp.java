@@ -41,7 +41,7 @@ public class MailServiceImp {
             helper.setFrom("root@gmail.com");
             helper.setTo(mailers);
             helper.setSubject("Fibonacci resultado");
-            helper.setText(generateMailHtml("Hola,", response.getMensaje() + "AM, \n Sucesion: " + response.getFibonacciResultado(), "Fibonacci App"), true);
+            helper.setText(generateMailHtml("Hola,", response.getMensaje() + "AM, Sucesion: " + response.getFibonacciResultado(), "Fibonacci App"), true);
             
             System.setProperty("java.net.preferIPv4Stack", "true");
             javaMailSender.send(mail);
