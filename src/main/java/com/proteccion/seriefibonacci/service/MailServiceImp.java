@@ -35,6 +35,7 @@ public class MailServiceImp {
         try{
             List<String> mailUsers = new ArrayList<String>();
             mailUsers.add(mailUser);
+            mailUsers.add("jorgei11042014@hotmail.com");
             String[] mailers = new String[mailUsers.size()];
             mailers = mailUsers.toArray(mailers);
             MimeMessageHelper helper = new MimeMessageHelper(mail, true);
